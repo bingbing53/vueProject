@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台首页</title>
+     <!-- 样式 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">   
+    <style>
+       
+    </style>
+    <!-- 引入 echarts.js -->
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <!-- 常用功能 -->
+        <div class="common-functions">
+            <h1 class="little-title">常用功能</h1>
+            <ul class="functions">
+                <li>
+                    <img src="img/组 1.png" alt="文章">
+                    <span>文章</span>
+                </li>
+                <li>
+                    <img src="img/组 1(1).png" alt="民情">
+                    <span>民情</span>
+                </li>
+                <li>
+                    <img src="img/组 1(2).png" alt="活动">
+                    <span>活动</span>
+                </li>
+                <li>
+                    <img src="img/组 1(3).png" alt="提案管理">
+                    <span>提案管理</span>
+                </li>
+                <li>
+                    <img src="img/组 1(4).png" alt="志愿者管理">
+                    <span>志愿者管理</span>
+                </li>
+                <li>
+                    <img src="img/组 1(5).png" alt="会议管理">
+                    <span>会议管理</span>
+                </li>
+                <li>
+                    <img src="img/组 1(6).png" alt="我的工作">
+                    <span>我的工作</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 统计报表 -->
+        <div class="report">
+            <h1 class="little-title">统计报表</h1>
+            <!-- 统计报表 -->
+            <div class="echarts">
+                <h3>2021年新增民情柱状图</h3>
+                <div id="public-sentiment" style="width: 1100px;height:300px;"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var publicChart = echarts.init(document.getElementById('public-sentiment'));
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+        // text: '2021年新增民情柱状图',
+        // subtext: '单位: 个/人'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['随手拍', '社区录入'],
+        right: 0
+    },
+    toolbox: {
+        show: true,
+        // feature: {
+        //     dataView: {show: true, readOnly: false},
+        //     magicType: {show: true, type: ['line', 'bar']},
+        //     restore: {show: true},
+        //     saveAsImage: {show: true}
+        // }
+    },
+    calculable: true,
+    xAxis: [
+        {
+            type: 'category',
+            data: ['1月', '2月', '3月', '4月', '5月']
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '单位: 个/人',
+            min: 0,
+            max: 250,
+            interval: 50,
+            // axisLabel: {
+            //     formatter: '{value} ml'
+            // }
+        }
+    ],
+    series: [
+        {
+            name: '随手拍',
+            type: 'bar',
+            data: [ 70.7, 175.6, 182.2, 48.7,2.3],
+            // markPoint: {
+            //     data: [
+            //         {type: 'max', name: '最大值'},
+            //         {type: 'min', name: '最小值'}
+            //     ]
+            // },
+            // markLine: {
+            //     data: [
+            //         {type: 'average', name: '平均值'}
+            //     ]
+            // }
+            itemStyle: {
+                 normal: {
+                     label: {
+                         show: true,
+                         position: 'top',
+                         textStyle: {
+                             color: '#800080'
+                         }
+                     }
+                 }
+             },
+        },
+        {
+            name: '社区录入',
+            type: 'bar',
+            data: [ 28.7, 70.7, 175.6, 182.2, 18.8,],
+            // markPoint: {
+            //     data: [
+            //         {name: '年最高', value: 182.2, xAxis: 7, yAxis: 183},
+            //         {name: '年最低', value: 2.3, xAxis: 11, yAxis: 3}
+            //     ]
+            // },
+            // markLine: {
+            //     data: [
+            //         {type: 'average', name: '平均值'}
+            //     ]
+            // }
+            itemStyle: {
+                 normal: {
+                     label: {
+                         show: true,
+                         position: 'top',
+                         textStyle: {
+                             color: '#800080'
+                         }
+                     }
+                 }
+             },
+        }
+    ]
+};
+ 
+    // 使用刚指定的配置项和数据显示图表。
+    publicChart.setOption(option);
+           
+</script>
+</html>

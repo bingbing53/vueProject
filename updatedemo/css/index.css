@@ -1,0 +1,52 @@
+ /* 标题 */
+ h1.little-title {
+     line-height: 25px;
+     font-size: 24px;
+     font-family: Microsoft YaHei;
+     font-weight: bold;
+     color: #333333;
+ }
+
+ /* 通用样式 */
+ .common-functions,
+ .report {
+     background-color: #fff;
+     padding: 30px 50px;
+ }
+
+ /* 常用功能 */
+ ul.functions {
+     overflow: hidden;
+     margin-left: -90px;
+     margin-top: 15px;
+ }
+
+ ul.functions li {
+     float: left;
+     margin-left: 94px;
+     text-align: center;
+ }
+
+ ul.functions li span {
+     font-size: 16px;
+     font-family: Microsoft YaHei;
+     font-weight: 400;
+     color: #333333;
+ }
+
+ /* 统计报表 */
+ .report {
+     margin-top: 20px;
+ }
+
+ .echarts {
+     text-align: center;
+ }
+
+ .echarts h3 {
+     font-size: 16px;
+     font-family: Microsoft YaHei;
+     font-weight: 400;
+     color: #000000;
+     line-height: 22px;
+ }
