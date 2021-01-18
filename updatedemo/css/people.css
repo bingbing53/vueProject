@@ -1,0 +1,242 @@
+.detail {
+    overflow: hidden;
+    max-width: 1170px;
+    height: 100%;
+}
+
+/* 小区楼宇 */
+.floor-num {
+    float: left;
+    background-color: #fff;
+    width: 270px;
+    height: 100%;
+    padding: 30px 20px 0;
+}
+
+.floor-num h2 {
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #212224;
+}
+
+.floor-num input {
+    width: 200px;
+    height: 20px;
+    background: #F8F8F8;
+    border-radius: 10px;
+    outline-style: none;
+    border: 1px solid #F8F8F8;
+    font-size: 12px;
+    font-family: MicrosoftYaHeiLight;
+    font-weight: 400;
+    color: #E5E5E5;
+    padding-left: 32px;
+    /* text-align: center; */
+    margin-top: 12px;
+    /* margin-bottom: 24px; */
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #E5E5E5;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #E5E5E5;
+}
+
+input::-webkit-input-placeholder {
+    color: #E5E5E5;
+}
+
+ul.village li {
+    margin-top: 25px;
+}
+
+ul.village li label {
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #212224;
+}
+
+ul.village li ul {
+    /* margin-top: -15px; */
+}
+
+ul.village li ul li {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #666666;
+    margin-top: 15px;
+    padding-left: 18px;
+    height: 34px;
+    line-height: 34px;
+}
+
+ul.village li ul li.active {
+    background: #D6EBFF;
+    opacity: 0.68;
+    border-radius: 4px 4px 4px 4px;
+    color: #1890FF;
+}
+
+/* 楼宇单元 */
+.unit-num {
+    float: left;
+    width: 661px;
+    height: 100%;
+    padding: 25px 15px;
+}
+
+.unit-top>ul {
+    overflow: hidden;
+    margin-left: -97px;
+}
+
+.unit-top>ul li {
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #2E2C2C;
+    float: left;
+    margin-left: 97px;
+}
+
+.unit-top>ul li span {
+    display: block;
+    line-height: 18px;
+    height: 18px;
+}
+
+.unit-top>ul li a {
+    display: block;
+    width: 38px;
+    height: 4px;
+    background-color: transparent;
+    border-radius: 2px;
+    margin: 8px auto 0;
+}
+
+.unit-top>ul li a.active {
+    background: #1890FF;
+}
+
+.unit-room>ul {
+    overflow: hidden;
+    margin-left: -20px;
+    margin-top: 15px;
+}
+
+.unit-room>ul li {
+    width: 195px;
+    height: 147px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 11px 2px rgba(37, 93, 144, 0.14);
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.room-msg {
+    float: left;
+    padding-top: 19px;
+    padding-left: 17px;
+}
+
+.room-msg label {
+    line-height: 14px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #797E87;
+    display: block;
+}
+
+.room-msg label a {
+    color: #1890FF;
+}
+
+.room-msg span {
+    display: block;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    line-height: 28px;
+    font-size: 28px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #212224;
+}
+
+.room-nature {
+    float: right;
+    margin-top: 9px;
+    margin-right: 7px;
+}
+
+/* 户主信息 */
+.information {
+    float: right;
+    width: 239px;
+    height: 100%;
+    background-color: #fff;
+    padding: 30px 20px 0;
+}
+
+.information h3 {
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #212224;
+}
+
+.personnel {
+    margin-top: 50px;
+}
+
+.personnel>label {
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #212224;
+}
+
+.personnel ul li {
+    /* width: 196px; */
+    /* height: 94px; */
+    background: #F8F8F8;
+    border-radius: 10px;
+    margin-top: 25px;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+.personnel ul li img {
+    width: 79px;
+    height: 85px;
+    float: left;
+}
+
+.personnel ul li div {
+    float: left;
+    padding: 15px 0;
+}
+
+.personnel ul li div span {
+    display: block;
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #212224;
+}
+
+.personnel ul li div span:last-child {
+    margin-top: 25px;
+}
